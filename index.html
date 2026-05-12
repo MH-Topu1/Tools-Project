@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite WorldCup Kits | Official Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Jersey<span>Era</span>BD</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Countries</a></li>
+                <li><a href="#products" onclick="filterProducts('Home')">Home Kits</a></li>
+                <li><a href="#products" onclick="filterProducts('Away')">Away Kits</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="cart-icon" id="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Stadium Bag</h3>
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p class="empty-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <section class="hero" id="home">
+        <div class="slider">
+      
+            <div class="slide active">
+                <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/global_wc26_away_jerseys_multifed_football_ss26_launch_plp_02_banner_snippet_t_2b89d0f6d3.jpg"
+                    alt="Stadium">
+                <div class="hero-content">
+                    <span class="badge">New Arrival</span>
+                    <h1>Wellcome To JerseyEra BD <br>Collect You'r jersey Here</h1>
+                    <p>Wear the legend. The official 2026 champions home and away kits are now available.</p>
+                    <a href="#products" class="main-btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <section class="featured-banner">
+        <div class="banner-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+                <h4>Express Shipping</h4>
+                <p>Worldwide delivery in 3-5 days</p>
+            </div>
+        </div>
+        <div class="banner-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+                <h4>Official Quality</h4>
+                <p>100% Authentic FIFA Licensed</p>
+            </div>
+        </div>
+        <div class="banner-item">
+            <i class="fa-solid fa-rotate"></i>
+            <div>
+                <h4>Easy Returns</h4>
+                <p>30-day jersey exchange policy</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2 class="section-title">World Cup 2026 <span>Jerseys</span></h2>
+            <div class="product-grid" id="product-grid">
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo">JerseyEra<span>BD</span> KITS</div>
+                <p>The world's premier destination for authentic national team kits. Quality meets passion.</p>
+                <div class="socials">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe for early access to drops.</p>
+                <div class="subscribe">
+                    <input type="email" placeholder="Email Address">
+                    <button>Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Elite WorldCup Kits. Passion for Football, Designed for Champions.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
